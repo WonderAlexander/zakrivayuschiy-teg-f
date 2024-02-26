@@ -1,0 +1,27 @@
+.filter__brightness {
+    filter: brightness(400%);
+}
+
+.filter__contrast {
+    filter: contrast(20%);
+}
+
+.filter__blur {
+    filter: blur(0.8rem);
+}
+
+.filter__grayscale {
+    filter: grayscale(0.8);
+}
+
+.filter__hue-rotate {
+    filter: hue-rotate(-90deg);
+}
+
+.filter__invert {
+    filter: invert(0.7);
+}
+
+.filter__mixed {
+    filter: sepia(1) contrast(2) brightness(200%);
+}

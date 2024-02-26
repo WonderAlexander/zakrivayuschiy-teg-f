@@ -12,3 +12,92 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+.theme-menu__button:focus-visible.theme-menu__button::after {
+    transform: scaleX(1);
+}
+
+.core {
+    transition: fill 0.3s 0.03s linear;
+}
+
+.main-body {
+    transition: fill 0.3s linear;
+}
+
+.sparks {
+    opacity: 0;
+}
+
+/* Покраска сердцевины принаведении на кнопку */
+.card__icon-button:hover .core {
+    transition: fill 0.3s linear;
+    fill: var(--accent-color);
+}
+
+/* Покраска тела сердца при навелении на кнопку */
+.card__icon-button:hover .main-body {
+    transition: fill 0.3s 0.05s linear;
+    fill: var(--accent-color);
+}
+
+/* Покраска сердцевины в активно состоянии кнопки */
+.card__icon-button:active .core {
+    transition: fill 0.3s linear;
+    fill: var(--heart-fill);
+}
+
+/* Покраска тела сердца в активном состоянии кнопки */
+.card__icon-button:active .main-body {
+    transition: fill 0.3s 0.05s linear;
+    fill: var(--heart-fill);
+}
+
+.like-icon.is-liked .core {
+    transition: fill 0.3s linear;
+    fill: var(--heart-fill);
+}
+
+.like-icon.is-liked .main-body {
+    transition: fill 0.3s 0.05s linear;
+    fill: var(--heart-fill);
+}
+
+.contour {
+    transition: fill 0.3s 0.06s linear;
+}
+
+.like-icon.is-liked .contour {
+    fill: var(--heart-fill);
+    transition: fill 0.1s linear;
+}
+
+.like-icon.is-liked .heart {
+    animation: heart-scale 0.3s 0.1s ease-in alternate-reverse;
+    transform-origin: center;
+}
+
+.like-icon.is-liked .sparks {
+    animation: sparks-dancing 0.3s 0.3s ease-in alternate-reverse;
+}
+
+
+@keyframes heart-scale {
+    from {
+        scale: 1;
+    }
+
+    to {
+        scale: 1.5;
+    }
+}
+
+@keyframes sparks-dancing {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

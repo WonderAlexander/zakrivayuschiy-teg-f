@@ -1,0 +1,56 @@
+.modal[open] {
+    min-inline-size: 357px;
+    display: grid;
+    grid-template-columns: 59px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 30px;
+    background-color: var(--bg-color);
+    border: 2px solid var(--accent-color);
+}
+
+.modal__text {
+    font-family: 'Press Start 2P';
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 21px;
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+.modal::backdrop {
+    background-color: rgb(0 0 0 / 0.75);
+}
+
+.modal__discrete {
+    width: 39px;
+    height: 39px;
+    color: var(--accent-color);
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.modal__from {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.modal__button {
+    width: 100%;
+    padding: 12.5px;
+    background-color: transparent;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    margin-top: 23px;
+}
+
+@media (width <= 375px) {
+    .modal[open] {
+        min-inline-size: 341px;
+        padding: 30px 40px;
+    }
+
+    .modal__button {
+        margin-top: 22px;
+    }
+}

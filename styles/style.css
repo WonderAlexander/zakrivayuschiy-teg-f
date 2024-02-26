@@ -1,3 +1,7 @@
+@import './header/header.css';
+@import './main/main.css';
+@import './footer/footer.css';
+@import './modal.css';
 /* Здесь вы напишете основную часть стилей страницы.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
@@ -17,4 +21,58 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+  font-variation-settings: var(--main-text-weight);
+  color: var(--accent-color);
+  background-size: cover;
+  padding: 100px 0 103px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  border: 2px solid var(--accent-color);
+  font-family: 'Press Start 2P';
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 12.6px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  transition: box-shadow .3s ease;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  -webkit-box-shadow: 2px 2px 0px 0px var(--accent-color);
+  -moz-box-shadow: 2px 2px 0px 0px var(--accent-color);
+  box-shadow: 2px 2px 0px 0px var(--accent-color);
+}
+
+.button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform .5s ease-in-out;
+}
+
+.button:hover.button::before {
+  transform: scaleX(1);
+}
+
+.button__text {
+  position: relative;
+  z-index: 1000;
+  color: var(--btn-hover-text);
+  mix-blend-mode: difference;
 }

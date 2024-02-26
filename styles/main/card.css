@@ -1,0 +1,106 @@
+.card {
+    width: clamp(375px, 100%, 700px);
+    border: 2px solid var(--accent-color);
+    background-color: var(--bg-color);
+    font-family: 'Inter', sans-serif;
+    color: var(--accent-color);
+    margin-bottom: 50px;
+}
+
+.card__title {
+    font-size: 1.125rem;
+    line-height: 21.78px;
+    font-variation-settings: var(--main-title-weight);
+    padding: 5px 10px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.card__image-wrapper  {
+    position: relative;
+    height: 696px;
+}
+
+.card__img {
+    width: 100%;
+}
+
+.card__watermark {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-family: 'Press Start 2P';
+    font-size: 14px;
+    line-height: 14px;
+    text-shadow:
+        -1px 0 var(--bg-color),
+        0 1px var(--bg-color),
+        1px 0 var(--bg-color),
+        0 -1px var(--bg-color);
+    opacity: 0.6;
+    mix-blend-mode: hard-light;
+    z-index: 1000
+}
+
+@supports((text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color))) {
+    .card__watermark {
+        -webkit-text-stroke: 1px var(--bg-color);
+        text-stroke: 1px var(--bg-color);
+        text-shadow: none;
+    }
+}
+
+.card__content {
+    font-size: 1.125rem;
+    line-height: 21px;
+    font-variation-settings: var(--main-text-weight);
+    padding: 25px;
+    border-top: 2px solid var(--accent-color);
+}
+
+.card__text {
+    margin-bottom: 27px;
+}
+
+.card__subtext {
+    margin-bottom: 25px;
+}
+
+.card__button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.card__like-button {
+    width: 130px;
+    height: 38px;
+    background: transparent;
+}
+
+.card__icon-button {
+    height: 38px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    transition: border .3s ease;
+    cursor: pointer;
+    margin-right: 4px;
+    padding: 0;
+}
+
+.card__icon-button:focus {
+    outline: none;
+}
+
+.card__icon-button:focus-visible {
+    border-color: var(--accent-color);
+}
+
+@media (width <= 375px) {
+    .card__image-wrapper {
+        height: 371px;
+    }
+
+    .card__watermark {
+        right: 13px;
+    }
+}

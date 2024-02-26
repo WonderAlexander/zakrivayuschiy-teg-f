@@ -1,0 +1,34 @@
+.footer__button {
+    width: 335px;
+    height: 55px;
+    padding: 19px 18.5px 21px;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer__discrete {
+    inline-size: 21px;
+    block-size: 21px;
+    color: var(--btn-hover-text);
+    position: relative;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}
+
+@media (width <= 375px) {
+    .footer__button {
+        flex-direction: column;
+        width: 306px;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .footer__discrete {
+        inline-size: 28px;
+        block-size: 28px;
+        margin-bottom: 8px;
+    }
+}
