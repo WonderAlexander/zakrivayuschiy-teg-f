@@ -110,7 +110,7 @@
       font-variation-settings: "wght" var(--main-title-weight);
     }
 
-    .card__text {
+    .card__content {
       font-variation-settings: "wght" var(--main-text-weight);
     }
   }

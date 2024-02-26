@@ -7,7 +7,7 @@
 
 :root.theme-light {
     /* fonts */
-    --main-font: 'Inter';
+    --main-font: 'Inter-Variable';
     --main-text-weight: 400;
     --main-title-weight: 700;
     --accent-font: 'Press Start 2P';
@@ -24,7 +24,7 @@
 
 :root.theme-dark {
     /* fonts */
-    --main-font: 'Inter';
+    --main-font: 'Inter-Variable';
     --main-text-weight: 465;
     --main-title-weight: 785;
     --accent-font: 'Press Start 2P';
@@ -42,7 +42,7 @@
 @media (prefers-color-scheme: light) {
     :root {
         /* fonts */
-        --main-font: 'Inter';
+        --main-font: 'Inter-Variable';
         --main-text-weight: 400;
         --main-title-weight: 700;
         --accent-font: 'Press Start 2P';
@@ -61,7 +61,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         /* fonts */
-        --main-font: 'Inter';
+        --main-font: 'Inter-Variable';
         --main-text-weight: 465;
         --main-title-weight: 785;
         --accent-font: 'Press Start 2P';
