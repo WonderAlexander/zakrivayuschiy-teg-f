@@ -2,8 +2,8 @@
 :root {
     /* fonts */
     --main-font: 'Inter';
-    --main-text-weight: 'wght' 400;
-    --main-title-weight: 'wght' 700;
+    --main-text-weight: 400;
+    --main-title-weight: 700;
     --accent-font: 'Press Start 2P';
     /* colors */
     --bg-color: #FFFFFF;

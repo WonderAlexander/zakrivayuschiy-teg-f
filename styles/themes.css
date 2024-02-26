@@ -8,8 +8,8 @@
 :root.theme-light {
     /* fonts */
     --main-font: 'Inter';
-    --main-text-weight: 'wght' 400;
-    --main-title-weight: 'wght' 700;
+    --main-text-weight: 400;
+    --main-title-weight: 700;
     --accent-font: 'Press Start 2P';
     /* colors */
     --bg-color: #FFFFFF;
@@ -25,8 +25,8 @@
 :root.theme-dark {
     /* fonts */
     --main-font: 'Inter';
-    --main-text-weight: 'wght' 465;
-    --main-title-weight: 'wght' 785;
+    --main-text-weight: 465;
+    --main-title-weight: 785;
     --accent-font: 'Press Start 2P';
     /* colors */
     --bg-color: #000000;
@@ -43,8 +43,8 @@
     :root {
         /* fonts */
         --main-font: 'Inter';
-        --main-text-weight: 'wght' 400;
-        --main-title-weight: 'wght' 700;
+        --main-text-weight: 400;
+        --main-title-weight: 700;
         --accent-font: 'Press Start 2P';
         /* colors */
         --bg-color: #FFFFFF;
@@ -62,8 +62,8 @@
     :root {
         /* fonts */
         --main-font: 'Inter';
-        --main-text-weight: 'wght' 465;
-        --main-title-weight: 'wght' 785;
+        --main-text-weight: 465;
+        --main-title-weight: 785;
         --accent-font: 'Press Start 2P';
         /* colors */
         --bg-color: #000000;
@@ -75,4 +75,4 @@
         --heart-contour: #00CC14;
         --heart-fill: #ff0000;
     }
-  }
+}
