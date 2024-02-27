@@ -1,7 +1,7 @@
 .modal[open] {
     min-inline-size: 357px;
     display: grid;
-    grid-template-columns: 59px 1fr;
+    grid-template-columns: 59px 234px;
     grid-template-rows: repeat(2, 1fr);
     padding: 30px;
     background-color: var(--bg-color);
@@ -9,7 +9,7 @@
 }
 
 .modal__text {
-    font-family: 'Press Start 2P';
+    font-family: var(--accent-font), 'Times New Roman', fantasy;
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 21px;
@@ -48,6 +48,7 @@
     .modal[open] {
         min-inline-size: 341px;
         padding: 30px 40px;
+        grid-template-columns: 59px 198px;
     }
 
     .modal__button {

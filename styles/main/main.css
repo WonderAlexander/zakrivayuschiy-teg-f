@@ -1,5 +1,6 @@
 @import './card.css';
 @import './filters.css';
+@import './footer.css';
 
 .main {
     padding-top: 100px;

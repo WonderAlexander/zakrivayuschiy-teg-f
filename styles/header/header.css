@@ -5,10 +5,11 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: 'Press Start 2P';
+    font-family: var(--accent-font), 'Times New Roman', fantasy;
     font-weight: 400;
     color: var(--accent-color);
     text-transform: uppercase;
+    padding-top: 136px;
     padding-bottom: 25px;
     margin: 0 auto;
 }
@@ -47,6 +48,7 @@
 
 .theme-menu__button::before {
     position: absolute;
+    top: 0;
     left: 0;
     content: "▶";
     opacity: 0;
@@ -97,16 +99,8 @@
     }
 }
 
-@media (375px < width ) {
-    .header {
-        max-height: 368px;
-        padding-top: 136px;
-    }
-}
-
 @media ( width <= 375px ) {
     .header {
-        max-height: 327px;
         padding-top: 120px;
     }
 }

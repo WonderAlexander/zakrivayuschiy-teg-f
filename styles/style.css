@@ -1,6 +1,5 @@
 @import './header/header.css';
 @import './main/main.css';
-@import './footer/footer.css';
 @import './modal.css';
 /* Здесь вы напишете основную часть стилей страницы.
 
@@ -21,7 +20,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), 'Arial', sans-serif;
   font-variation-settings: 'wght' var(--main-text-weight);
   color: var(--accent-color);
   background-size: cover;
@@ -32,7 +31,7 @@
 
 .button {
   border: 2px solid var(--accent-color);
-  font-family: 'Press Start 2P';
+  font-family: var(--accent-font), 'Times New Roman', fantasy;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 12.6px;

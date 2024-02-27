@@ -12,6 +12,9 @@ body {
   margin: 0;
   background-color: var(--bg-color);
   background-image: var(--bg-image);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1,

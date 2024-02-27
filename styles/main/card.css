@@ -2,7 +2,7 @@
     width: clamp(375px, 100%, 700px);
     border: 2px solid var(--accent-color);
     background-color: var(--bg-color);
-    font-family: 'Inter-Variable', sans-serif;
+    font-family: var(--main-font), 'Arial', sans-serif;
     color: var(--accent-color);
     margin-bottom: 50px;
 }
@@ -28,7 +28,7 @@
     position: absolute;
     top: 25px;
     right: 25px;
-    font-family: 'Press Start 2P';
+    font-family: var(--accent-font), 'Times New Roman', fantasy;
     font-size: 14px;
     line-height: 14px;
     text-shadow:
@@ -50,11 +50,11 @@
 }
 
 .card__text {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
 }
 
-.card__subtext {
-    margin-bottom: 25px;
+.mb-27 {
+    margin-bottom: 27px;
 }
 
 .card__button {
